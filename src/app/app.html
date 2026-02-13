@@ -1,0 +1,13 @@
+<div [class.dark]="isDark()" class="min-h-screen bg-white dark:bg-gray-900 transition-colors min-w-screen flex items-center justify-center">
+  <px-button (clicked)="toggleDark()" class="absolute right-1 top-1 p-2" [icon]="isDark()? faMoon: faSun"></px-button>
+  <div class="flex space-x-4">
+    <details>
+      <summary class="text-gray-800 dark:text-gray-200">Buttons</summary>
+      <test-buttons></test-buttons>
+    </details>
+    <details>
+      <summary class="text-gray-800 dark:text-gray-200">Toggle Buttons</summary>
+      <test-toggle-buttons></test-toggle-buttons>
+    </details>
+  </div>
+</div>

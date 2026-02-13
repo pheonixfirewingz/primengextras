@@ -1,0 +1,81 @@
+<div class="flex flex-col space-y-8 p-8 border-4 border-black dark:border-white">
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Default Toggle</h3>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button></px-toggle-button>
+      <px-toggle-button level="trace"></px-toggle-button>
+      <px-toggle-button level="info"></px-toggle-button>
+      <px-toggle-button level="warn"></px-toggle-button>
+      <px-toggle-button level="danger"></px-toggle-button>
+    </div>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button checked></px-toggle-button>
+      <px-toggle-button checked level="trace"></px-toggle-button>
+      <px-toggle-button checked level="info"></px-toggle-button>
+      <px-toggle-button checked level="warn"></px-toggle-button>
+      <px-toggle-button checked level="danger"></px-toggle-button>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Small Size</h3>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button size="small"></px-toggle-button>
+      <px-toggle-button size="small" level="trace"></px-toggle-button>
+      <px-toggle-button size="small" level="info"></px-toggle-button>
+      <px-toggle-button size="small" level="warn"></px-toggle-button>
+      <px-toggle-button size="small" level="danger"></px-toggle-button>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Medium Size</h3>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button size="medium"></px-toggle-button>
+      <px-toggle-button size="medium" level="trace"></px-toggle-button>
+      <px-toggle-button size="medium" level="info"></px-toggle-button>
+      <px-toggle-button size="medium" level="warn"></px-toggle-button>
+      <px-toggle-button size="medium" level="danger"></px-toggle-button>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Large Size</h3>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button size="large"></px-toggle-button>
+      <px-toggle-button size="large" level="trace"></px-toggle-button>
+      <px-toggle-button size="large" level="info"></px-toggle-button>
+      <px-toggle-button size="large" level="warn"></px-toggle-button>
+      <px-toggle-button size="large" level="danger"></px-toggle-button>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Huge Size</h3>
+    <div class="flex flex-row space-x-4">
+      <px-toggle-button size="huge"></px-toggle-button>
+      <px-toggle-button size="huge" level="trace"></px-toggle-button>
+      <px-toggle-button size="huge" level="info"></px-toggle-button>
+      <px-toggle-button size="huge" level="warn"></px-toggle-button>
+      <px-toggle-button size="huge" level="danger"></px-toggle-button>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">With Event Handling</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-toggle-button (clicked)="onToggle($event)"></px-toggle-button>
+      <px-toggle-button level="info" (clicked)="onToggle($event)"></px-toggle-button>
+      <span class="text-gray-800 dark:text-gray-200">Toggle to test events</span>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">No Propagation</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-toggle-button noPropagate></px-toggle-button>
+      <px-toggle-button level="warn" noPropagate></px-toggle-button>
+      <span class="text-gray-800 dark:text-gray-200">Click events won't propagate</span>
+    </div>
+  </div>
+</div>

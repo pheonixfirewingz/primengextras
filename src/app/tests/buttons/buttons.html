@@ -1,0 +1,179 @@
+<div class="flex flex-col space-y-8 p-8 border-4 border-black dark:border-white">
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Text Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button>Test</px-button>
+      <px-button level="trace">Test</px-button>
+      <px-button level="info">Test</px-button>
+      <px-button level="warn">Test</px-button>
+      <px-button level="danger">Test</px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Icon Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button [icon]="faGrimace"></px-button>
+      <px-button level="trace" [icon]="faUser"></px-button>
+      <px-button level="info" [icon]="faPlus"></px-button>
+      <px-button level="warn" [icon]="faHome"></px-button>
+      <px-button level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Icon Left + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button label="Test" [icon]="faGrimace"></px-button>
+      <px-button label="Test" level="trace" [icon]="faUser"></px-button>
+      <px-button label="Test" level="info" [icon]="faPlus"></px-button>
+      <px-button label="Test" level="warn" [icon]="faHome"></px-button>
+      <px-button label="Test" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Icon Right + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button label="Test" iconAlign="right" [icon]="faGrimace"></px-button>
+      <px-button label="Test" iconAlign="right" level="trace" [icon]="faUser"></px-button>
+      <px-button label="Test" iconAlign="right" level="info" [icon]="faPlus"></px-button>
+      <px-button label="Test" iconAlign="right" level="warn" [icon]="faHome"></px-button>
+      <px-button label="Test" iconAlign="right" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Raised - Text Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button raised>Test</px-button>
+      <px-button raised level="trace">Test</px-button>
+      <px-button raised level="info">Test</px-button>
+      <px-button raised level="warn">Test</px-button>
+      <px-button raised level="danger">Test</px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Raised - Icon Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button raised [icon]="faGrimace"></px-button>
+      <px-button raised level="trace" [icon]="faUser"></px-button>
+      <px-button raised level="info" [icon]="faPlus"></px-button>
+      <px-button raised level="warn" [icon]="faHome"></px-button>
+      <px-button raised level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Raised - Icon Right + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button raised label="Test" iconAlign="right" [icon]="faGrimace"></px-button>
+      <px-button raised label="Test" iconAlign="right" level="trace" [icon]="faUser"></px-button>
+      <px-button raised label="Test" iconAlign="right" level="info" [icon]="faPlus"></px-button>
+      <px-button raised label="Test" iconAlign="right" level="warn" [icon]="faHome"></px-button>
+      <px-button raised label="Test" iconAlign="right" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline - Text Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline>Test</px-button>
+      <px-button outline level="trace">Test</px-button>
+      <px-button outline level="info">Test</px-button>
+      <px-button outline level="warn">Test</px-button>
+      <px-button outline level="danger">Test</px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline - Icon Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline [icon]="faGrimace"></px-button>
+      <px-button outline level="trace" [icon]="faUser"></px-button>
+      <px-button outline level="info" [icon]="faPlus"></px-button>
+      <px-button outline level="warn" [icon]="faHome"></px-button>
+      <px-button outline level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline - Icon + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline label="Test" [icon]="faGrimace"></px-button>
+      <px-button outline label="Test" level="trace" [icon]="faUser"></px-button>
+      <px-button outline label="Test" level="info" [icon]="faPlus"></px-button>
+      <px-button outline label="Test" level="warn" [icon]="faHome"></px-button>
+      <px-button outline label="Test" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline - Icon Right + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline label="Test" iconAlign="right" [icon]="faGrimace"></px-button>
+      <px-button outline label="Test" iconAlign="right" level="trace" [icon]="faUser"></px-button>
+      <px-button outline label="Test" iconAlign="right" level="info" [icon]="faPlus"></px-button>
+      <px-button outline label="Test" iconAlign="right" level="warn" [icon]="faHome"></px-button>
+      <px-button outline label="Test" iconAlign="right" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline + Raised - Text Only</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline raised>Test</px-button>
+      <px-button outline raised level="trace">Test</px-button>
+      <px-button outline raised level="info">Test</px-button>
+      <px-button outline raised level="warn">Test</px-button>
+      <px-button outline raised level="danger">Test</px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Outline + Raised - Icon + Label</h3>
+    <div class="flex flex-row space-x-4">
+      <px-button outline raised label="Test" [icon]="faGrimace"></px-button>
+      <px-button outline raised label="Test" level="trace" [icon]="faUser"></px-button>
+      <px-button outline raised label="Test" level="info" [icon]="faPlus"></px-button>
+      <px-button outline raised label="Test" level="warn" [icon]="faHome"></px-button>
+      <px-button outline raised label="Test" level="danger" [icon]="faObsidian"></px-button>
+    </div>
+  </div>
+
+  <!-- SIZE TESTS -->
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Sizes - Text Only</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-button size="small">Small</px-button>
+      <px-button size="medium">Medium</px-button>
+      <px-button size="large">Large</px-button>
+      <px-button size="huge">Huge</px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Sizes - Icon Only</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-button size="small" [icon]="faHome"></px-button>
+      <px-button size="medium" [icon]="faHome"></px-button>
+      <px-button size="large" [icon]="faHome"></px-button>
+      <px-button size="huge" [icon]="faHome"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Sizes - Icon + Label</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-button size="small" label="Small" [icon]="faHome"></px-button>
+      <px-button size="medium" label="Medium" [icon]="faHome"></px-button>
+      <px-button size="large" label="Large" [icon]="faHome"></px-button>
+      <px-button size="huge" label="Huge" [icon]="faHome"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Sizes - Outline Icon + Label</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-button outline size="small" label="Small" level="info" [icon]="faHome"></px-button>
+      <px-button outline size="medium" label="Medium" level="info" [icon]="faHome"></px-button>
+      <px-button outline size="large" label="Large" level="info" [icon]="faHome"></px-button>
+      <px-button outline size="huge" label="Huge" level="info" [icon]="faHome"></px-button>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-3 text-gray-800 dark:text-gray-200">Sizes - Raised Icon + Label</h3>
+    <div class="flex flex-row space-x-4 items-center">
+      <px-button raised size="small" label="Small" level="warn" [icon]="faHome"></px-button>
+      <px-button raised size="medium" label="Medium" level="warn" [icon]="faHome"></px-button>
+      <px-button raised size="large" label="Large" level="warn" [icon]="faHome"></px-button>
+      <px-button raised size="huge" label="Huge" level="warn" [icon]="faHome"></px-button>
+    </div>
+  </div>
+</div>
